@@ -304,51 +304,75 @@ class CartManager {
 
 // Gestor de productos
 class ProductManager {
-  static async loadFeaturedProducts() {
+  // Dentro de la clase ProductManager en main.js
+static async loadFeaturedProducts() {
     try {
-      const container = document.getElementById("featuredProducts");
-      if (!container) return;
+        const container = document.getElementById('featuredProducts');
+        if (!container) return;
 
-      container.innerHTML = `<div class="loading-spinner"></div>`;
-      const products = await this.getMockProducts();
+        container.innerHTML = `<div class="loading-spinner"></div>`;
+        const products = await this.getMockProducts();
 
-      container.innerHTML = products
-        .map((product) => `
-                <article class="product-card" data-id="${product.id}">
-                    <div class="product-image">
-                        <span class="product-badge">${product.badge || ""}</span>
+        container.innerHTML = products.map(product => `
+            <article class="product-card" role="article" data-id="${product.id}">
+                <div class="product-image">
+                    <img src="assets/images/${product.image}" alt="${product.name}" loading="lazy">
+                    <span class="product-badge">${product.badge || ''}</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">${product.name}</h3>
+                    <p class="product-description">${product.description}</p>
+                    <div class="product-footer">
+                        <span class="product-price">S/ ${product.price.toFixed(2)}</span>
+                        <button class="btn btn-add-cart" data-id="${product.id}">Añadir</button>
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">${product.name}</h3>
-                        <p class="product-description">${product.description}</p>
-                        <div class="product-footer">
-                            <span class="product-price">S/ ${product.price.toFixed(2)}</span>
-                            <button class="btn btn-add-cart" data-id="${product.id}">Añadir</button>
-                        </div>
-                    </div>
-                </article>`)
-        .join("");
+                </div>
+            </article>
+        `).join('');
 
-      container.querySelectorAll(".btn-add-cart").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          const product = products.find((p) => p.id == e.target.dataset.id);
-          if (product) window.cartManager.addProduct(product);
-        });
-      });
+        // ... resto de la lógica de botones
     } catch (error) {
-      console.error(error);
+        console.error(error);
     }
-  }
+}
 
   static async getMockProducts() {
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    await new Promise(resolve => setTimeout(resolve, 800));
     return [
-      { id: 1, name: "Taladro Percutor 800W", description: "Motor de alto rendimiento y velocidad variable", price: 89.90, badge: "🔥 Top" },
-      { id: 2, name: "Set Herramientas 100pzs", description: "Maletín reforzado en cromo vanadio", price: 149.90, badge: "✨ Nuevo" },
-      { id: 3, name: "Amoladora Angular 4-1/2\"", description: "Protección contra rearranque accidental", price: 59.90, badge: "⚡ Oferta" },
-      { id: 4, name: "Nivel Láser Autonivelante", description: "Precisión técnica para interiores", price: 119.90, badge: "🏗️ Pro" },
+      { 
+        id: 1, 
+        name: "Taladro Percutor 800W", 
+        image: "taladro.jpg", // Nombre del archivo en assets/images/
+        description: "Motor de alto rendimiento y velocidad variable", 
+        price: 89.90, 
+        badge: "🔥 Top" 
+      },
+      { 
+        id: 2, 
+        name: "Set Herramientas 100pzs", 
+        image: "juego-llaves.jpg", 
+        description: "Maletín reforzado en cromo vanadio", 
+        price: 149.90, 
+        badge: "✨ Nuevo" 
+      },
+      { 
+        id: 3, 
+        name: "Amoladora Angular 4-1/2\"", 
+        image: "amoladora.jpg", 
+        description: "Protección contra rearranque accidental", 
+        price: 59.90, 
+        badge: "⚡ Oferta" 
+      },
+      { 
+        id: 4, 
+        name: "Nivel Láser Autonivelante", 
+        image: "laser.jpg", 
+        description: "Precisión técnica para interiores", 
+        price: 119.90, 
+        badge: "🏗️ Pro" 
+      }
     ];
-  }
+}
 }
 
 class App {

@@ -482,6 +482,14 @@ body {
   font-size: 4rem;
 }
 
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Para que la herramienta no se deforme */
+    padding: 15px;
+    background-color: #f8fafc; /* Fondo claro para resaltar el producto */
+}
+
 .product-badge {
   position: absolute;
   top: var(--spacing-sm);
