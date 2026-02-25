@@ -2,9 +2,15 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Técnico | ToolMaster Industrial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/assets/css/productos.css" />
-  </head>
+</head>
 
   <body>
     <div id="header-container"></div>
@@ -12,108 +18,90 @@
     <main class="main-content">
       <section class="page-header">
         <div class="container">
-          <h1>Nuestros Productos</h1>
-          <p>Todos los artículos deportivos organizados por categorías</p>
+          <h1>Suministros e Inventario</h1>
+          <p>Equipamiento profesional con certificación de seguridad y alto rendimiento.</p>
         </div>
       </section>
 
-      <!-- Buscador y filtros -->
       <section class="products-filters">
         <div class="container">
-          <input type="text" id="product-search" class="search-input" placeholder="Buscar productos..." />
+          <input type="text" id="product-search" class="search-input" placeholder="Referencia técnica o nombre de herramienta..." />
 
           <div class="category-filters">
-            <button class="category-pill active" data-category="all">Todos</button>
-            <button class="category-pill" data-category="gimnasio">Gimnasio</button>
-            <button class="category-pill" data-category="calzado">Calzado deportivo</button>
-            <button class="category-pill" data-category="ciclismo">Ciclismo</button>
-            <button class="category-pill" data-category="futbol">Fútbol</button>
-            <button class="category-pill" data-category="ropa">Ropa deportiva</button>
-            <button class="category-pill" data-category="accesorios">Accesorios</button>
-            <button class="category-pill" data-category="boxeo">Boxeo</button>
-            <button class="category-pill" data-category="natacion">Natación</button>
+            <button class="category-pill active" data-category="all">Todo el Inventario</button>
+            <button class="category-pill" data-category="electricas">Eléctricas</button>
+            <button class="category-pill" data-category="manuales">Manuales</button>
+            <button class="category-pill" data-category="medicion">Medición</button>
+            <button class="category-pill" data-category="corte">Corte</button>
+            <button class="category-pill" data-category="jardineria">Mantenimiento Exterior</button>
+            <button class="category-pill" data-category="construccion">Obra Civil</button>
+            <button class="category-pill" data-category="seguridad">Protección (EPP)</button>
           </div>
         </div>
       </section>
 
-      <!-- Catálogo -->
       <section class="products-catalog">
         <div class="container">
           <div class="products-grid">
-            <article class="product-card" data-category="gimnasio">
-              <img src="/assets/images/mancuernas.jpg" alt="Mancuernas Ajustables" />
-              <h2 class="product-name">Mancuernas Ajustables</h2>
-              <p class="product-price">S/ 49.90</p>
-              <p class="product-description">Set de mancuernas regulables ideales para entrenamiento en casa o gimnasio.</p>
-              <button class="btn-add-cart" data-id="1">Agregar al carrito</button>
+            <article class="product-card" data-category="electricas">
+              <img src="/assets/images/taladro.jpg" alt="Taladro Percutor Industrial 800W" />
+              <h2 class="product-name">Taladro Percutor Industrial 800W</h2>
+              <p class="product-price">S/ 299.90</p>
+              <p class="product-description">Motor de alto torque con escobillas autodesconectantes para protección del motor.</p>
+              <button class="btn-add-cart" data-id="1">Añadir al Pedido</button>
             </article>
 
-            <article class="product-card" data-category="calzado">
-              <img src="/assets/images/zapatillas.jpg" alt="Zapatillas Running Pro" />
-              <h2 class="product-name">Zapatillas Running Pro</h2>
-              <p class="product-price">S/ 119.90</p>
-              <p class="product-description">Zapatillas ligeras con amortiguación avanzada para alto rendimiento.</p>
-              <button class="btn-add-cart" data-id="2">Agregar al carrito</button>
+            <article class="product-card" data-category="corte">
+              <img src="/assets/images/sierra-circular.jpg" alt="Sierra Circular de Banco 1400W" />
+              <h2 class="product-name">Sierra Circular de Banco 1400W</h2>
+              <p class="product-price">S/ 459.90</p>
+              <p class="product-description">Base de acero reforzado y sistema de recolección de viruta integrado.</p>
+              <button class="btn-add-cart" data-id="2">Añadir al Pedido</button>
             </article>
 
-            <article class="product-card" data-category="ciclismo">
-              <img src="/assets/images/casco.jpg" alt="Casco de Ciclismo Pro" />
-              <h2 class="product-name">Casco de Ciclismo Pro</h2>
-              <p class="product-price">S/ 89.90</p>
-              <p class="product-description">Casco aerodinámico con ventilación avanzada para rutas urbanas y montaña.</p>
-              <button class="btn-add-cart" data-id="3">Agregar al carrito</button>
+            <article class="product-card" data-category="manuales">
+              <img src="/assets/images/juego-llaves.jpg" alt="Set de Llaves Cromo Vanadio" />
+              <h2 class="product-name">Set de Llaves Cromo Vanadio</h2>
+              <p class="product-price">S/ 129.90</p>
+              <p class="product-description">Acabado satinado resistente a la corrosión. Incluye estuche rígido de transporte.</p>
+              <button class="btn-add-cart" data-id="3">Añadir al Pedido</button>
             </article>
 
-            <article class="product-card" data-category="futbol">
-              <img src="/assets/images/balon.jpg" alt="Balón Fútbol Profesional" />
-              <h2 class="product-name">Balón Fútbol Profesional</h2>
-              <p class="product-price">S/ 59.90</p>
-              <p class="product-description">Balón de competición con materiales de alta durabilidad y precisión.</p>
-              <button class="btn-add-cart" data-id="4">Agregar al carrito</button>
+            <article class="product-card" data-category="corte">
+              <img src="/assets/images/amoladora.jpg" alt="Amoladora Angular de Desbaste 750W" />
+              <h2 class="product-name">Amoladora Angular 750W</h2>
+              <p class="product-price">S/ 279.90</p>
+              <p class="product-description">Diseño ergonómico para uso intensivo en metalurgia y procesos de desbaste.</p>
+              <button class="btn-add-cart" data-id="4">Añadir al Pedido</button>
             </article>
 
-            <article class="product-card" data-category="ropa">
-              <img src="/assets/images/camiseta.jpg" alt="Camiseta Deportiva Técnica" />
-              <h2 class="product-name">Camiseta Deportiva Técnica</h2>
-              <p class="product-price">S/ 39.90</p>
-              <p class="product-description">Camiseta transpirable de secado rápido ideal para entrenamientos intensos.</p>
-              <button class="btn-add-cart" data-id="5">Agregar al carrito</button>
-            </article>
-
-            <article class="product-card" data-category="accesorios">
-              <img src="/assets/images/guantes.jpg" alt="Guantes de Entrenamiento" />
-              <h2 class="product-name">Guantes de Entrenamiento</h2>
-              <p class="product-price">S/ 29.90</p>
-              <p class="product-description">Guantes antideslizantes para mejorar el agarre y proteger las manos.</p>
-              <button class="btn-add-cart" data-id="6">Agregar al carrito</button>
-            </article>
-
-            <article class="product-card" data-category="boxeo">
-              <img src="/assets/images/guantes-boxeo.jpg" alt="Guantes de Boxeo" />
-              <h2 class="product-name">Guantes de Boxeo</h2>
-              <p class="product-price">S/ 79.90</p>
-              <p class="product-description">Guantes acolchados de alta resistencia ideales para entrenamiento y sparring.</p>
-              <button class="btn-add-cart" data-id="7">Agregar al carrito</button>
-            </article>
-
-            <article class="product-card" data-category="natacion">
-              <img src="/assets/images/lentes-natacion.jpg" alt="Lentes de Natación" />
-              <h2 class="product-name">Lentes de Natación</h2>
-              <p class="product-price">S/ 24.90</p>
-              <p class="product-description">Lentes ergonómicos con protección UV y ajuste cómodo para piscina o mar.</p>
-              <button class="btn-add-cart" data-id="8">Agregar al carrito</button>
-            </article>
-
-            <article class="product-card" data-category="gimnasio">
-              <img src="/assets/images/banca-funcional.jpg" alt="Banca Funcional para Gimnasio" />
-              <h2 class="product-name">Banca Funcional para Gimnasio</h2>
+            <article class="product-card" data-category="medicion">
+              <img src="/assets/images/laser.jpg" alt="Nivel Láser de Líneas Cruzadas" />
+              <h2 class="product-name">Nivel Láser Autonivelante</h2>
               <p class="product-price">S/ 349.90</p>
-              <p class="product-description">Banca ajustable multifuncional para rutinas completas de fuerza y musculación.</p>
-              <button class="btn-add-cart" data-id="9">Agregar al carrito</button>
+              <p class="product-description">Precisión milimétrica para alineación de estructuras y acabados de obra.</p>
+              <button class="btn-add-cart" data-id="5">Añadir al Pedido</button>
+            </article>
+
+            <article class="product-card" data-category="seguridad">
+              <img src="/assets/images/casco-seguridad.jpg" alt="Casco de Seguridad ABS Nivel 2" />
+              <h2 class="product-name">Casco con Suspensión de 6 Puntos</h2>
+              <p class="product-price">S/ 39.90</p>
+              <p class="product-description">Certificación ANSI/ISEA. Alta resistencia a impactos y aislamiento dieléctrico.</p>
+              <button class="btn-add-cart" data-id="8">Añadir al Pedido</button>
+            </article>
+
+            <article class="product-card" data-category="construccion">
+              <img src="/assets/images/mezcladora.jpg" alt="Mezcladora Eléctrica Estacionaria" />
+              <h2 class="product-name">Mezcladora de Concreto Reforzada</h2>
+              <p class="product-price">S/ 589.90</p>
+              <p class="product-description">Capacidad de carga industrial para mezcla homogénea en proyectos civiles.</p>
+              <button class="btn-add-cart" data-id="9">Añadir al Pedido</button>
             </article>
           </div>
         </div>
       </section>
+
       <div id="cart-message" class="cart-message"></div>
     </main>
 

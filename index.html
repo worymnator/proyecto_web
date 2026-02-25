@@ -1,146 +1,133 @@
 <!doctype html>
 <html lang="es">
-  <!-- Head será cargado dinámicamente desde components/head.html -->
   <div id="head-placeholder"></div>
 
   <body>
-    <!-- Header será cargado dinámicamente desde components/header.html -->
     <div id="header-container"></div>
 
-    <!-- Contenido principal de la página de inicio -->
     <main class="main-content" id="main-content">
-      <!-- Hero Section -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="container">
           <div class="hero-content">
-            <h1 id="hero-title" class="hero-title">Potencia tu rendimiento con equipamiento profesional</h1>
-            <p class="hero-subtitle">Todo lo que necesitas para alcanzar tus metas deportivas. Calidad, innovación y precio.</p>
+            <h1 id="hero-title" class="hero-title">Construye con precisión y potencia profesional</h1>
+            <p class="hero-subtitle">
+              Herramientas de alto rendimiento para proyectos exigentes. Calidad industrial, durabilidad y precisión.
+            </p>
             <div class="hero-cta">
-              <a href="/pages/productos.html" class="btn btn-primary" aria-label="Ver productos destacados"> Ver Productos </a>
-              <a href="/pages/ofertas.html" class="btn btn-secondary" aria-label="Ver ofertas especiales"> Ofertas Especiales </a>
+              <a href="/pages/productos.html" class="btn btn-primary" aria-label="Ver catálogo de herramientas"> Ver Catálogo </a>
+              <a href="/pages/ofertas.html" class="btn btn-secondary" aria-label="Ver promociones para profesionales"> Promociones </a>
             </div>
           </div>
-          <div class="hero-image" role="img" aria-label="Atleta usando equipamiento deportivo profesional">
-            <!-- Imagen de fondo será manejada por CSS -->
-          </div>
+          <div class="hero-image" role="img" aria-label="Taller profesional con herramientas eléctricas de última generación"></div>
         </div>
       </section>
 
-      <!-- Categorías destacadas -->
       <section class="categories" aria-labelledby="categories-title">
         <div class="container">
-          <h2 id="categories-title" class="section-title">Explora nuestras categorías</h2>
-          <p class="section-subtitle">Equipamiento especializado para cada deporte</p>
+          <h2 id="categories-title" class="section-title">Especialidades</h2>
+          <p class="section-subtitle">Equipamiento robusto para cada sector</p>
 
           <div class="categories-grid">
             <article class="category-card" role="article">
-              <div class="category-icon">🏋️</div>
-              <h3 class="category-title">Fitness & Gym</h3>
-              <p class="category-desc">Equipos, accesorios y suplementos para tu entrenamiento</p>
-              <a href="/pages/productos.html" class="category-link" aria-label="Explorar categoría Fitness">Ver más →</a>
+              <div class="category-icon">🔌</div>
+              <h3 class="category-title">Herramientas Eléctricas</h3>
+              <p class="category-desc">Taladros, amoladoras y sierras de alta potencia</p>
+              <a href="/pages/productos.html" class="category-link" aria-label="Explorar herramientas eléctricas">Ver más →</a>
             </article>
 
             <article class="category-card" role="article">
-              <div class="category-icon">🏃</div>
-              <h3 class="category-title">Running</h3>
-              <p class="category-desc">Zapatillas, ropa y tecnología para corredores</p>
-              <a href="/pages/productos.html" class="category-link" aria-label="Explorar categoría Running">Ver más →</a>
+              <div class="category-icon">🛠️</div>
+              <h3 class="category-title">Herramientas Manuales</h3>
+              <p class="category-desc">Llaves, destornilladores y sets de medición profesional</p>
+              <a href="/pages/productos.html" class="category-link" aria-label="Explorar herramientas manuales">Ver más →</a>
             </article>
 
             <article class="category-card" role="article">
-              <div class="category-icon">🚴</div>
-              <h3 class="category-title">Ciclismo</h3>
-              <p class="category-desc">Bicicletas, componentes y accesorios ciclistas</p>
-              <a href="/pages/productos.html" class="category-link" aria-label="Explorar categoría Ciclismo">Ver más →</a>
+              <div class="category-icon">🏗️</div>
+              <h3 class="category-title">Construcción</h3>
+              <p class="category-desc">Niveles láser, mezcladoras y maquinaria pesada</p>
+              <a href="/pages/productos.html" class="category-link" aria-label="Explorar categoría construcción">Ver más →</a>
             </article>
 
             <article class="category-card" role="article">
-              <div class="category-icon">⚽</div>
-              <h3 class="category-title">Deportes de Equipo</h3>
-              <p class="category-desc">Equipamiento para fútbol, baloncesto, voleibol y más</p>
-              <a href="/pages/productos.html" class="category-link" aria-label="Explorar categoría Deportes de Equipo">Ver más →</a>
+              <div class="category-icon">🛡️</div>
+              <h3 class="category-title">Seguridad (EPP)</h3>
+              <p class="category-desc">Cascos, guantes y calzado con certificación oficial</p>
+              <a href="/pages/productos.html" class="category-link" aria-label="Explorar equipo de seguridad">Ver más →</a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Productos destacados -->
       <section class="featured-products" aria-labelledby="products-title">
         <div class="container">
-          <h2 id="products-title" class="section-title">Productos Destacados</h2>
-          <p class="section-subtitle">Lo más vendido este mes</p>
+          <h2 id="products-title" class="section-title">Novedades en Stock</h2>
+          <p class="section-subtitle">Las marcas líderes del mercado</p>
 
           <div class="products-grid" id="featuredProducts">
-            <!-- Los productos serán cargados dinámicamente con JavaScript -->
             <div class="loading-products">
               <div class="loading-spinner"></div>
-              <p>Cargando productos...</p>
+              <p>Cargando catálogo...</p>
             </div>
           </div>
 
           <div class="section-cta">
-            <a href="/pages/productos.html" class="btn btn-outline" aria-label="Ver todos los productos"> Ver Todos los Productos </a>
+            <a href="/pages/productos.html" class="btn btn-outline" aria-label="Ver inventario completo"> Ver Inventario Completo </a>
           </div>
         </div>
       </section>
 
-      <!-- Características de la tienda -->
       <section class="features" aria-labelledby="features-title">
         <div class="container">
-          <h2 id="features-title" class="section-title">¿Por qué elegir SportPro?</h2>
+          <h2 id="features-title" class="section-title">¿Por qué elegir ToolMaster?</h2>
 
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-icon">🚚</div>
-              <h3 class="feature-title">Envío Rápido</h3>
-              <p class="feature-desc">Entrega en 24-48h para pedidos peninsulares</p>
+              <h3 class="feature-title">Despacho Logístico</h3>
+              <p class="feature-desc">Entrega en obra o taller en 24h para stock disponible</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-icon">✅</div>
-              <h3 class="feature-title">Garantía Total</h3>
-              <p class="feature-desc">2 años de garantía en todos nuestros productos</p>
+              <div class="feature-icon">⚙️</div>
+              <h3 class="feature-title">Servicio Técnico</h3>
+              <p class="feature-desc">Mantenimiento y repuestos originales garantizados</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-icon">👨‍💼</div>
-              <h3 class="feature-title">Asesoramiento Expertos</h3>
-              <p class="feature-desc">Nuestro equipo te ayudará a elegir lo mejor</p>
+              <div class="feature-icon">👷</div>
+              <h3 class="feature-title">Soporte Técnico</h3>
+              <p class="feature-desc">Asesoría especializada para licitaciones y proyectos</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-icon">💳</div>
-              <h3 class="feature-title">Pago Seguro</h3>
-              <p class="feature-desc">Múltiples métodos de pago con seguridad SSL</p>
+              <div class="feature-icon">🏢</div>
+              <h3 class="feature-title">Facturación Empresa</h3>
+              <p class="feature-desc">Gestión simplificada para cuentas corporativas y profesionales</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer será cargado dinámicamente desde components/footer.html -->
     <div id="footer-container"></div>
 
-    <!-- Modal del carrito -->
     <div class="modal" id="cartModal" role="dialog" aria-labelledby="cartModalTitle" aria-hidden="true">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 id="cartModalTitle" class="modal-title">Tu Carrito</h2>
-          <button class="modal-close" aria-label="Cerrar carrito">&times;</button>
+          <h2 id="cartModalTitle" class="modal-title">Presupuesto / Carrito</h2>
+          <button class="modal-close" aria-label="Cerrar">&times;</button>
         </div>
         <div class="modal-body">
-          <div id="cartItems" class="cart-items">
-            <!-- Items del carrito cargados dinámicamente -->
-          </div>
+          <div id="cartItems" class="cart-items"></div>
           <div class="cart-summary">
-            <p class="cart-total">Total: <span id="cartTotal">0.00</span>€</p>
-            <button class="btn btn-primary btn-checkout" id="checkoutBtn">Proceder al Pago</button>
+            <p class="cart-total">Subtotal (sin IVA): <span id="cartTotal">0.00</span>€</p>
+            <button class="btn btn-primary btn-checkout" id="checkoutBtn">Finalizar Pedido</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Script principal -->
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

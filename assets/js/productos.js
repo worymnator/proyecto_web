@@ -37,7 +37,7 @@ addToCartButtons.forEach((button) => {
     const productCard = button.closest(".product-card");
     const productName = productCard.querySelector(".product-name").textContent;
 
-    showCartMessage(`"${productName}" se agregó al carrito`);
+    showCartMessage(`"${productName}" fue agregado al carrito`);
   });
 });
 
