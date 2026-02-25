@@ -4,7 +4,7 @@
  */
 
  * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Contenedor general (ORIGINAL) */
@@ -165,7 +165,6 @@
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 12px;
-  font-family: "Courier New", monospace; /* Aspecto técnico de etiqueta */
 }
 
 .product-description {
@@ -177,7 +176,7 @@
   padding-top: 10px;
 }
 
-/* Botón (ORIGINAL) */
+/* Botón */
 .btn-add-cart {
   margin-top: 18px;
   padding: 12px;
@@ -199,7 +198,7 @@
   box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
 }
 
-/* Mensaje carrito (ORIGINAL) */
+/* Mensaje carrito */
 .cart-message {
   position: fixed;
   top: 90px;
